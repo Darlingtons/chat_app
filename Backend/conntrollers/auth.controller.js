@@ -14,15 +14,15 @@ export const signup= async (req,res)=>{
         const salt = await bcrypt.genSalt(10);
         const hashedpassword = await bcrypt.hash(password,salt);
 
-        const boyproflepic=`https://avatar.iran.liara.run/public/boy?username=${username}`
-        const girlproflepic=`https://avatar.iran.liara.run/public/girl?username=${username}`
+        const boyprofilepic=`https://avatar.iran.liara.run/public/boy?username=${username}`
+        const girlprofilepic=`https://avatar.iran.liara.run/public/girl?username=${username}`
 
         const newUser= new User({
             fullname,
             username,
             password:hashedpassword,
             gender,
-            profilepic : gender === "male"?boyproflepic:girlproflepic
+            profilepic : gender === "male"?boyprofilepic:girlprofilepic
         })
 
         if(newUser){
@@ -33,6 +33,7 @@ export const signup= async (req,res)=>{
             fullname: newUser.fullname,
             username: newUser.username,
             profilepic: newUser.profilepic
+            
         });
         } else{
             return res.status(400).json({error:"Invalid User data"});
