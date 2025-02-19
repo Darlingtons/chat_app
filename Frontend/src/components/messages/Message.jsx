@@ -11,6 +11,9 @@ const Message = ({message}) => {// Placeholder for the actual formatted time
     const chatClassName = fromMe?'chat-end':'chat-start';
     const profilePic = fromMe?authUser.profilepic:selectedConversation?.profilepic;
     const  bubbleBgColor= fromMe?'bg-blue-500':'';
+    const shakeClass= message.shouldShake?"shake":""
+
+
     return (
       <div className={`chat ${chatClassName}`}>
         <div className="chat-image avatar">
@@ -21,7 +24,7 @@ const Message = ({message}) => {// Placeholder for the actual formatted time
             />
           </div>
         </div>
-        <div className={`chat-bubble text-white  ${bubbleBgColor} p`}>{message.message}</div>
+        <div className={`chat-bubble text-white  ${bubbleBgColor} ${shakeClass} `}>{message.message}</div>
         <div className="chat-footer opacity-50 text-xs flex gap-1 items-center">
           {formattedTime}
         </div>
