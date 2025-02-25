@@ -53,8 +53,7 @@ npm run build
 
 <h2>🤝 Contributing</h2> <p>Contributions are welcome! Feel free to fork this repo and submit a pull request.</p>
 
-<h2>🚀 Happy Coding! 💻🔗</h2> ```
-This version uses HTML <h1> to <h3> tags for font sizes and <p>, <ul>, <table> for better formatting. It will look clean and well-structured on GitHub. 🚀
+<h2>🚀 Happy Coding! 💻🔗</h2><h3> Let me know if any change is needed</h3>
 
 
 
