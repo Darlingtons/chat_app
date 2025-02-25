@@ -1,8 +1,8 @@
-Chat App 💬 (Real-time Messaging with Authentication)
-Overview
+#Chat App 💬 (Real-time Messaging with Authentication)
+##Overview
 This is a real-time chat application that allows users to communicate with each other securely. The app features authentication, authorization, login/logout, and real-time messaging using Socket.io. It is built with React (frontend), Node.js (backend), and MongoDB (database).
 
-Features 🚀
+##Features 🚀
 
 ✅ User Authentication & Authorization (Signup, Login, JWT-based authentication)
 
@@ -16,14 +16,14 @@ Features 🚀
 
 ✅ Logout Functionality
 
-Tech Stack 🛠️
-Frontend:
+##Tech Stack 🛠️
+##Frontend:
 
 React.js (with Hooks & Context API)
 
 Tailwind CSS / Bootstrap (optional)
 
-Backend:
+##Backend:
 
 Node.js
 
@@ -33,21 +33,21 @@ MongoDB (Mongoose ORM)
 
 Socket.io
 
-Authentication:
+##Authentication:
 
 JWT (JSON Web Token) for session management
 
 Bcrypt.js for password hashing
 
-Start the backend server:
+##Start the backend server:
 
 npm run server
 
-Frontend Setup
+##Frontend Setup
 
 npm run build
 
-Usage 📌
+##Usage 📌
 
 1️⃣ Sign up or Log in
 
@@ -57,7 +57,7 @@ Usage 📌
 
 4️⃣ Logout when done
 
-Contributing 🤝
+##Contributing 🤝
 Contributions are welcome! Feel free to fork this repo and submit a pull request.
 
 🚀 Happy Coding! 💻🔗
